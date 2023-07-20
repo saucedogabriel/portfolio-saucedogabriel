@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100;0,200;0,400;1,200&family=Manrope:wght@200;500;800&family=Poppins:ital,wght@0,700;1,400;1,800&family=Quicksand:wght@300&display=swap');
+:root {
+   /* Typography*/
+   --base-font: 'Open Sans', Arial, sans-serif;
+   --secondary-font: 'Aleo', serif;
+
+   /* Pallette Colors*/
+   --primary-color: #efefef;
+   --secondary-color: #333333;
+   --black-color: #111414;
+
+   /* Font-Size*/
+   --font-jumbo-40 : 4em; 
+   --font-xjumbo-35 : 3.5em;
+   --font-xxjumbo-30: 3em;
+   --font-large-26: 2.6em;
+   --font-xlarge-24: 2.4em;
+   --font-xxlarge-22: 2.2em;
+   --font-medium-20: 2em;
+   --font-xmedium-18: 1.8em;
+   --font-small-16: 1.6em;
+   --font-xsmall-14: 1.4em;
+   --font-xxsmall-12: 1.2em;
+
+   /* Spacing */
+   --spacing--310: 31rem;
+   --spacing--100: 10rem;
+   --spacing--80: 8rem;
+   --spacing--60: 6rem;
+   --spacing--40: 4rem;
+   --spacing--24: 2.4rem;
+   --spacing--20: 2rem;
+   --spacing--16: 1.6rem;
+   --spacing--12: 1.2rem;
+   --spacing--10: 1rem;
+   --spacing--8: 0.8rem;
+   --spacing--4: 0.4rem;
+}
+
+
+*,
+*::before,
+*::after {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   line-height: 1.5;
+}
+
+html {
+   font-family: var(--base-font);
+   font-size: 62.5%;
+}
+
+a {
+   text-decoration: none;
+   color: inherit;
+}
+
+img {
+   width: 100%;
+}
+
+a {
+   text-decoration: none;
+   color: inherit;
+}
+
+ul {
+   list-style-type: none;
+}
