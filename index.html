@@ -3,47 +3,68 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portfolio | Gabriel Saucedo</title>
-        <link rel="icon" href="./img/icon.png">
+        <title>Gabriel Saucedo | Fullstack Js Dev</title>
+        <link rel="icon" href="./img/image (2).png">
         <link rel="stylesheet" href="styles.css">
     </head>
     <body> 
-        <header class="header"> <!-- INICIO HEADER -->
-            <h1 class="header__h1">
-                <a href="#" title="Gabriel Saucedo" class="header__a">Gabriel Saucedo</a>
-            </h1>
-            <nav class="header__nav">
-                <ul class="header__ul">
-                    <li class="header__li">
-                        <a href="#" title="Home" class="header__a--nav">About</a>
-                    </li>
-                    <li class="header__li">
-                        <a href="#trabajos" title="Trabajos" class="header__a--nav">Work</a>
-                    </li>
-                    <li class="header__li">
-                        <a href="#contacto" title="Contacto" class="header__a--nav">Process</a>
-                    </li>
-                    <li class="header__li">
-                        <a href="#contacto" title="Contacto" class="header__a--nav">Drops me a line</a>
-                    </li>
-                </ul>
-            </nav>
-            <p class="header__p">Dark</p> 
+        <header class="header" id="header"> <!-- INICIO HEADER -->
+            <div class="header__div--container container">
+                <h1 class="header__h1">
+                    <a href="#" title="Gabriel Saucedo" class="header__a">Gabriel Saucedo</a>
+                </h1>
+                <nav class="header__nav nav">
+                    <ul class="header__ul">
+                        <li class="header__li">
+                            <a href="#" title="Home" class="header__a--nav">Acerca de mí</a>
+                        </li>
+                        <li class="header__li">
+                            <a href="#trabajos" title="Trabajos" class="header__a--nav">Trabajos</a>
+                        </li>
+                        <li class="header__li">
+                            <a href="#contacto" title="Contacto" class="header__a--nav">Proceso</a>
+                        </li>
+                        <li class="header__li">
+                            <a href="#contacto" title="Contacto" class="header__a--nav">Contáctame</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__div">
+                    <div class="header__div--styles">
+                        <p class="header__p--dark">Dark</p>
+                        <p class="header__p--light">Light</p>
+                    </div>
+                    <div class="header__div--bg">
+                        <svg class="header__svg--moon" width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="miter"><path d="M19,16A9,9,0,0,1,10.91,3.07a9,9,0,1,0,9.18,12.86A9.81,9.81,0,0,1,19,16Z"></path></svg>
+                        <svg class="header__svg--sun" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 7.5C9.51472 7.5 7.5 9.51472 7.5 12C7.5 14.4853 9.51472 16.5 12 16.5C14.4853 16.5 16.5 14.4853 16.5 12C16.5 9.51472 14.4853 7.5 12 7.5ZM6 12C6 8.68629 8.68629 6 12 6C15.3137 6 18 8.68629 18 12C18 15.3137 15.3137 18 12 18C8.68629 18 6 15.3137 6 12Z" fill="#080341"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.75 3V5.25H11.25V3H12.75Z" fill="#080341"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M21 12.75L18.75 12.75L18.75 11.25L21 11.25L21 12.75Z" fill="#080341"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M18.8943 6.16637L17.3033 7.75736L16.2426 6.6967L17.8336 5.10571L18.8943 6.16637Z" fill="#080341"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M17.8336 18.8944L16.2426 17.3034L17.3033 16.2428L18.8943 17.8337L17.8336 18.8944Z" fill="#080341"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.75 18.75V21H11.25V18.75H12.75Z" fill="#080341"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.25 12.75L3 12.75L3 11.25L5.25 11.25L5.25 12.75Z" fill="#080341"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.75732 17.3033L6.16633 18.8943L5.10567 17.8337L6.69666 16.2427L7.75732 17.3033Z" fill="#080341"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.69666 7.75744L5.10567 6.16645L6.16633 5.10579L7.75732 6.69678L6.69666 7.75744Z" fill="#080341"/>
+                            </svg>
+                    </div>
+                </div>
+            </div>
         </header> <!-- FIN HEADER -->
-        <main class="main"> 
+        <main class="main container"> 
             <section class="main__section--hero section" id="hero">
                 <article class="section__article--hero">
                     <h2 class="section__h2--hero">Digital Designer</h2>
-                    <h3 class="section__h3--hero">specialized in Web Design, UX / UI, Webflow, and Front End Development.</h3>
+                    <p class="section__p--hero">Destreza en Diseño Web, Experiencia de Usuario (UX/UI), Webflow y Desarrollo Full Stack.</p>
                 </article>
             </section>
-            <section class="main__section--contacto section" id="contacto">
+            <section class="main__section--contacto section " id="contacto">
                 <article class="section__article--contacto">
-                    <h2 class="section__h2--contacto">Estoy ayudando a nuevas empresas y dueños de negocios a hacer una declaración visual a través de un diseño y desarrollo web impecable para que puedan aumentar el conocimiento de la marca y vender más</h2>
-                    <button class="section__button--contacto">Drop me a line</button>
+                    <h2 class="section__h2--contacto">Estoy ayudando a nuevas empresas y dueños de negocios a hacer una declaración visual a través de un diseño y desarrollo web impecable para que puedan aumentar el conocimiento de la marca y vender más.</h2>
+                    <a href="mailto:saucedogabriel99@gmail.com" class="section__button--contacto">¡Escríbeme!</a>
                 </article>
                 <article class="section__article--contacto">
-                    <p class="section__p--contacto">Vamos a conectarnos</p>
+                    <p class="section__p--contacto">Explorá mis redes sociales</p>
                     <ul class="section__ul--contacto">
                         <li class="section__li--contacto">
                             <a href="#" class="section__a--contacto" title="Nombre" target="_blank" rel="noopener noreferrer">
@@ -55,12 +76,12 @@
                                 Github
                             </a>
                         </li>
-                        <li class="main__li--contacto">
+                        <li class="section__li--contacto">
                             <a href="#" class="section__a--contacto" title="Nombre" target="_blank" rel="noopener noreferrer">
                                 Linkeding
                             </a>
                         </li>
-                        <li class="main__li--contacto">
+                        <li class="section__li--contacto">
                             <a href="#" class="section__a--contacto" title="Nombre" target="_blank" rel="noopener noreferrer">
                                 Instagram
                             </a>
@@ -69,32 +90,32 @@
                 </article>
             </section>
             <section class="main__section--servicios section" id="servicios">
-                <h2 class="section__h2--servicios">I can help you with ...</h2>
+                <h2 class="section__h2--servicios">Puedo ayudarte con ...</h2>
                 <div class="section__div--servicios">
                     <article class="section__article--servicios">
-                        <h4 class="section__h4--servicios">01</h4>
-                        <p class="section__p--servicios">Design</p>
-                        <p class="section__p--servicios">I make web designs that engage your audience and create the user experience you want.</p>
+                        <span class="section__span--servicios">01</span>
+                        <h3 class="section__h3--servicios">Desing</h3>
+                        <p class="section__p--servicios">Transformo ideas en interfaces visuales cautivadoras, asegurando una identidad de marca impactante y una experiencia de usuario envolvente. Mi enfoque en la estética y usabilidad garantiza que cada detalle esté cuidadosamente considerado para generar una conexión significativa con la audiencia.</p>
                     </article>
                     <article class="section__article--servicios">
-                        <h4 class="section__h4--servicios">02</h4>
-                        <p class="section__p--servicios">Development</p>
-                        <p class="section__p--servicios">Bringing visuals to life through developing highly functional web solutions.</p>
+                        <span class="section__span--servicios">02</span>
+                        <h3 class="section__h3--servicios">Development</h3>
+                        <p class="section__p--servicios">Contemplo los conceptos creativos en códigos limpios y funcionales, optimizando el rendimiento y la velocidad del sitio web. Implemento tecnologías vanguardistas para ofrecer interactividad, dinamismo y una navegación fluida que cautive y retenga a los usuarios.</p>
                     </article>
                     <article class="section__article--servicios">
-                        <h4 class="section__h4--servicios">03</h4>
-                        <p class="section__p--servicios">The Full Package</p>
-                        <p class="section__p--servicios">Get the best of both worlds for your website, capture your brand identity and get fully functional features.</p>
+                        <span class="section__span--servicios">03</span>
+                        <h3 class="section__h3--servicios">Full Stack Package</h3>
+                        <p class="section__p--servicios">Mi pasión por el diseño y desarrollo web me impulsa a ofrecer un paquete completo que combina creatividad, tecnología y funcionalidad para satisfacer las necesidades y metas específicas de cada cliente. Con mi enfoque full stack, puedo ofrecer soluciones cohesivas y personalizadas.</p>
                     </article>
                 </div>
             </section>
             <section class="main__section--trabajos section" id="trabajos">
-                <article class="section__article--trabajos">
-                    <div class="section__div--trabajos">
-                        <p class="section__p--trabajos">Selected Work</p>
-                        <span class="section__span--trabajos">(4)</span>
+                <article class="section__article">
+                    <div class="section__div">
+                        <p class="section__p">Selected Work</p>
+                        <span class="section__span">(4)</span>
                     </div>
-                    <p class="section__p--trabajos">A piece from my selection of favorites</p>
+                    <p class="section__p">A piece from my selection of favorites</p>
                 </article>
                 <article class="section__article--trabajos">
                     <a href="" class="section__a--trabajos">
@@ -103,7 +124,7 @@
                             <p class="section__p--trabajos">Web Design, Webflow Development</p>
                         </div>
                         <div class="section__div--trabajos"></div>
-                        <p class="section__p--trabajos">/22</p>
+                        <p class="section__p--year">/22</p>
                     </a>
                     <a href="" class="section__a--trabajos">
                         <div class="section__div--trabajos">
@@ -111,7 +132,7 @@
                             <p class="section__p--trabajos">Web Design, Webflow Development</p>
                         </div>
                         <div class="section__div--trabajos"></div>
-                        <p class="section__p--trabajos">/22</p>
+                        <p class="section__p--year">/22</p>
                     </a>
                     <a href="" class="section__a--trabajos">
                         <div class="section__div--trabajos">
@@ -119,7 +140,7 @@
                             <p class="section__p--trabajos">Web Design, Webflow Development</p>
                         </div>
                         <div class="section__div--trabajos"></div>
-                        <p class="section__p--trabajos">/22</p>
+                        <p class="section__p--year">/22</p>
                     </a>
                     <a href="" class="section__a--trabajos">
                         <div class="section__div--trabajos">
@@ -127,12 +148,100 @@
                             <p class="section__p--trabajos">Web Design, Webflow Development</p>
                         </div>
                         <div class="section__div--trabajos"></div>
-                        <p class="section__p--trabajos">/22</p>
+                        <p class="section__p--year">/22</p>
                     </a>
                 </article>
             </section>
+            <section class="main__section--proceso section" id="proceso">
+                <article class="section__article--proceso">
+                    <h4 class="section__h4--proceso">My way of getting things done</h4>
+                    <p class="section__p--proceso">Fast and transparent, the path to owning a website that will represent your brand in the best of light is only 4 weeks away. Standing by the Waterfall methodology, I assure a step by step completion of the whole process</p>
+                </article>
+                <article class="section__article--proceso_2">
+                    <ul class="section__ul--proceso">
+                        <li class="section__li--proceso">
+                            <div class="section__div--proceso">
+                                <div class="section__div--container">
+                                    <span class="section__span--proceso">01.</span>
+                                    <h4 class="section__h4--container">UX | Wireframing</h4>
+                                </div>
+                                <svg class="section__svg--proceso" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="24" height="24" fill="white"/>
+                                    <path d="M17 9.5L12 14.5L7 9.5" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="section__div--body"></div>
+                            <div class="section__div--divider"></div>
+                        </li>
+                        <li class="section__li--proceso">
+                            <div class="section__div--proceso">
+                                <div class="section__div--container">
+                                    <span class="section__span--proceso">01.</span>
+                                    <h4 class="section__h4--container">Web Desing</h4>
+                                </div>
+                                <svg class="section__svg--proceso" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="24" height="24" fill="white"/>
+                                    <path d="M17 9.5L12 14.5L7 9.5" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="section__div--body"></div>
+                            <div class="section__div--divider"></div>
+                        </li>
+                        <li class="section__li--proceso">
+                            <div class="section__div--proceso">
+                                <div class="section__div--container">
+                                    <span class="section__span--proceso">01.</span>
+                                    <h4 class="section__h4--container">Web Development</h4>
+                                </div>
+                                <svg class="section__svg--proceso" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="24" height="24" fill="white"/>
+                                    <path d="M17 9.5L12 14.5L7 9.5" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="section__div--body"></div>
+                            <div class="section__div--divider"></div>
+                        </li>
+                        <li class="section__li--proceso">
+                            <div class="section__div--proceso">
+                                <div class="section__div--container">
+                                    <span class="section__span--proceso">01.</span>
+                                    <h4 class="section__h4--container">Analytics Setup | Support</h4>
+                                </div>
+                                <svg class="section__svg--proceso" width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="24" height="24" fill="white"/>
+                                    <path d="M17 9.5L12 14.5L7 9.5" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="section__div--body"></div>
+                            <div class="section__div--divider"></div>
+                        </li>
+                    </ul>
+                </article>
+            </section>
+            <section class="main__section---contact section" id="contact">
+                <article class="section__article--contact">
+                    <div class="section__div--contact">
+                        <picture class="section__picture--online">
+                            <img src="./img/image (2).png" alt="" class="section__img--contact">
+                        </picture>
+                        <h3 class="section__h3--contact">Let’s talk about a project, collaboration or an idea you may have</h3>
+                    </div>
+                    <a href="mailto:saucedogabriel99@gmail.com" class="section__button--contacto">¡Escríbeme!</a>
+                </article>
+            </section>
         </main> <!-- FIN MAIN -->
-        <footer class="footer"> <!-- INICIO FOOTER -->
+        <footer class="footer" id="footer"> <!-- INICIO FOOTER -->
+            <nav class="footer__nav">
+                <p class="footer__p">© 2023All Rights Reserved. Design & Coded with ❤️️</p>
+                <ul class="footer__ul">
+                    <li class="footer__li"><a href="#" class="footer__a">Dribbble</a></li>
+                    <li class="footer__li"><a href="#" class="footer__a">Behance</a></li>
+                    <li class="footer__li"><a href="#" class="footer__a">Linkedin</a></li>
+                    <li class="footer__li"><a href="#" class="footer__a">Instagram</a></li>
+                    <li class="footer__li"><a href="#" class="footer__a">Email</a></li>
+                </ul>
+                <p class="footer__p">Imprint</p>
+            </nav>
         </footer> <!-- FIN FOOTER -->
     </body>
 </html>
