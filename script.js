@@ -1,23 +1,29 @@
 const PROYECTOS = document.querySelectorAll('.section__a--trabajos');
-const innerCursores = document.querySelectorAll(".cursor--small");
+const innerCursores = document.querySelectorAll(".section__div--small");
 
 let clientX = 0;
 let clientY = 0;
 
-
 let jobs = {
-    1: "./img/Calculadora de edad.png",
-    2: "./img/Formulario Inscripción.png",
+    1: "./img/Calculadora.png",
+    2: "./img/Formulario.png",
     3: "./img/Funkopop.png",
-    4: "./img/Funkopop.png"
+    4: "./img/Portfolio.png"
 }
+
+document.addEventListener("mousemove", e => {
+    clientX = e.clientX;
+    clientY = e.clientY;
+
+    innerCursores.forEach(cursor => {
+        cursor.style.transform = `translate(${clientX}px, ${clientY}px)`;
+    });
+});
 
 PROYECTOS.forEach(proyecto => {
     proyecto.addEventListener('mouseover', (e) => {
         const enlace = e.target.closest('.section__a--trabajos');
         const idProyectoHover = enlace.id;
-        clientX = e.clientX;
-        clientY = e.clientY;
 
         if (enlace) {
             PROYECTOS.forEach(otroProyecto => {
@@ -27,22 +33,33 @@ PROYECTOS.forEach(proyecto => {
             });
 
             const innerImgDiv = e.target.closest('.section__a--trabajos').previousElementSibling;
-            const innerImg = e.target.closest('.section__a--trabajos').previousElementSibling.firstElementChild;
+            let dataSetImg = innerImgDiv.dataset.img;
+            
+            // if(innerImgDiv){
+            //     if(dataSetImg === idProyectoHover){
+            //         innerImg.setAttribute('src', jobs[idProyectoHover]);
+            //     }
+            // }
 
-            if(innerImgDiv){
-                let dataSetImg = innerImgDiv.dataset.img;
-                if(dataSetImg === idProyectoHover){
-                    innerImg.setAttribute('src', jobs[idProyectoHover]);
+            innerCursores.forEach(cursor => {
+                const dataSetImg = cursor.dataset.img;
+                if (cursor){
+                    if (Number(dataSetImg) != Number(idProyectoHover)){
+                        cursor.style.backgroundImage = 'none'; 
+                    } else{
+                        cursor.style.backgroundImage = `url(${jobs[idProyectoHover]})`;
+                        cursor.style.transform = `translate(${clientX}px, ${clientY}px)`;
+                    }
                 }
-            }
+            });
         }
     });
 
     proyecto.addEventListener('mouseout', (e) => {
         PROYECTOS.forEach(otroProyecto => {
         otroProyecto.classList.remove('inactive');
-        const innerImg = e.target.closest('.section__a--trabajos').previousElementSibling.firstElementChild;
-        innerImg.setAttribute('src', '');
+        const innerImgDiv = e.target.closest('.section__a--trabajos').previousElementSibling;
+        innerImgDiv.style.backgroundImage = 'none'; 
         });
     });
 });
