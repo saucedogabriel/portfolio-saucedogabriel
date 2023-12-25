@@ -7,7 +7,7 @@ let clientY = 0;
 let jobs = {
     1: "./img/Calculadora.png",
     2: "./img/Formulario.png",
-    3: "./img/Funkopop.png",
+    3: "./img/tesla.png",
     4: "./img/Portfolio.png"
 }
 
